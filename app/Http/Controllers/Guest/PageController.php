@@ -23,7 +23,7 @@ class PageController extends Controller
         // chiedere dati al database
 
         $movies = Movie::all();
-        dd($movies);
+
         return view('movies', compact('movies'));
     }
 }
